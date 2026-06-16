@@ -123,6 +123,7 @@
     .hero-visual .avatar-wrapper{position:relative;width:320px;height:320px}
     .hero-visual .avatar-wrapper svg{width:100%;height:100%;display:block}
     .hero-visual .avatar-bg{position:absolute;inset:0;border-radius:50%;background:linear-gradient(135deg,var(--accent-light),var(--accent));opacity:.12}
+    .hero-visual .avatar-img{width:100%;height:100%;border-radius:50%;object-fit:cover;position:relative;z-index:1;border:3px solid var(--accent-light)}
     @media(prefers-reduced-motion:no-preference){.hero-visual .avatar-bg{animation:pulse-glow 4s ease-in-out infinite}}
     .hero-visual .avatar-svg{position:relative;z-index:1}
     .hero-scroll-indicator{position:absolute;bottom:1.75rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.25rem;color:var(--text-muted);font-size:.7rem;letter-spacing:.05em;text-transform:uppercase}
@@ -305,22 +306,7 @@
       <div class="hero-visual reveal reveal-delay-2 hero-enter hero-enter-d3">
         <div class="avatar-wrapper">
           <div class="avatar-bg"></div>
-          <div class="avatar-svg">
-            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="96" fill="var(--bg-alt)" stroke="var(--accent)" stroke-width="2"/>
-              <path d="M68 72 Q70 54 100 50 Q130 54 132 72 Q134 82 128 78 Q126 68 118 63 Q108 57 100 59 Q92 57 82 63 Q74 68 72 78 Q66 82 68 72Z" fill="var(--text)" opacity=".7"/>
-              <circle cx="100" cy="82" r="28" fill="var(--accent-light)" stroke="var(--accent)" stroke-width="1.5"/>
-              <circle cx="91" cy="78" r="3" fill="var(--text)"/>
-              <circle cx="109" cy="78" r="3" fill="var(--text)"/>
-              <path d="M90 93 Q100 101 110 93" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <path d="M70 122 L84 118 L92 124 L92 162 L70 162Z" fill="var(--accent)" opacity=".12"/>
-              <path d="M130 122 L116 118 L108 124 L108 162 L130 162Z" fill="var(--accent)" opacity=".12"/>
-              <path d="M92 124 L100 132 L108 124 L108 162 L92 162Z" fill="var(--accent)" opacity=".08"/>
-              <path d="M95 120 L100 130 L105 120" stroke="var(--accent)" fill="var(--accent-light)" stroke-width="1.2" opacity=".8"/>
-              <rect x="87" y="142" width="26" height="18" rx="3" fill="var(--accent)" opacity=".08" stroke="var(--accent)" stroke-width="1"/>
-              <path d="M92 151 L97 156 L109 146" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
+          <img src="profil-agoy.jpeg" alt="Foto Al Ghari Wahid" class="avatar-img" width="320" height="320" />
         </div>
       </div>
     </div>
